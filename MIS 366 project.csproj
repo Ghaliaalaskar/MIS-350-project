@@ -67,26 +67,78 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bookinghistory.aspx" />
+    <Content Include="changepassword.aspx" />
+    <Content Include="myaccount.aspx" />
+    <Content Include="mybooking.aspx" />
+    <Content Include="userdashboard.aspx" />
+    <Content Include="userlogout.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="user.Master.cs">
-      <DependentUpon>user.Master</DependentUpon>
+    <Compile Include="bookinghistory.aspx.cs">
+      <DependentUpon>bookinghistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="user.Master.designer.cs">
-      <DependentUpon>user.Master</DependentUpon>
+    <Compile Include="bookinghistory.aspx.designer.cs">
+      <DependentUpon>bookinghistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="changepassword.aspx.cs">
+      <DependentUpon>changepassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="changepassword.aspx.designer.cs">
+      <DependentUpon>changepassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="myaccount.aspx.cs">
+      <DependentUpon>myaccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="myaccount.aspx.designer.cs">
+      <DependentUpon>myaccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mybooking.aspx.cs">
+      <DependentUpon>mybooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mybooking.aspx.designer.cs">
+      <DependentUpon>mybooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="user master.Master.cs">
+      <DependentUpon>user master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user master.Master.designer.cs">
+      <DependentUpon>user master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="userdashboard.aspx.cs">
+      <DependentUpon>userdashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userdashboard.aspx.designer.cs">
+      <DependentUpon>userdashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userlogout.aspx.cs">
+      <DependentUpon>userlogout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userlogout.aspx.designer.cs">
+      <DependentUpon>userlogout.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="user.Master" />
+    <Content Include="user master.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="img\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

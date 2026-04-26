@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="user.master.cs" Inherits="MIS_350_project.user" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 734px;
+            background-color: #70677A;
+        }
+        .auto-style3 {
+            width: 235px;
+            height: 118px;
+            background-color: #70677A;
+        }
+        .auto-style16 {
+            width: 235px;
+            text-align: center;
+            background-color: #70677A;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table cellpadding="5" cellspacing="5" class="auto-style1">
+            <tr>
+                <td class="auto-style3"></td>
+                <td rowspan="2" style="background-color: #FFFFFF">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p>
+                    <br />
+                </p>
+                <p>
+                </p>
+                <p>
+                </p>
+                <p>
+                </p>
+                <p>
+                </p>
+                <p>
+                </p>
+                <p>
+                </p>
+                <p>
+                </p>
+                <p>
+                </p>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </asp:ContentPlaceHolder>
+        </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style16">
+                    <asp:HyperLink ID="userdashboard" runat="server" NavigateUrl="~/userdashboard.aspx" style="text-align: center; color: #FFFFFF">User Dashboard</asp:HyperLink>
+                    <br />
+                    <br />
+                    <asp:HyperLink ID="myaccount" runat="server" NavigateUrl="~/myaccount.aspx" style="text-align: center; color: #FFFFFF">My Account</asp:HyperLink>
+                    <br />
+                    <br />
+                    <asp:HyperLink ID="mybookings" runat="server" NavigateUrl="~/mybooking.aspx" style="color: #FFFFFF">My Bookings</asp:HyperLink>
+                    <br />
+                    <br />
+                    <asp:HyperLink ID="bookinghistory" runat="server" NavigateUrl="~/bookinghistory.aspx" style="color: #FFFFFF">Booking History</asp:HyperLink>
+                    <br />
+                    <br />
+                    <asp:HyperLink ID="HyperLink5" runat="server">hyperlink</asp:HyperLink>
+                    <br />
+                    <br />
+                    <br />
+                    <asp:HyperLink ID="logout" runat="server" NavigateUrl="~/userlogout.aspx" style="color: #FFFFFF">Log Out</asp:HyperLink>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
