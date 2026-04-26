@@ -12,6 +12,10 @@
         .auto-style19 {
             text-align: center;
         }
+        .auto-style20 {
+            text-align: center;
+            width: 659px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -27,8 +31,9 @@
             </td>
         </tr>
         <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
+            <td class="auto-style20">
+                &nbsp;</td>
+            <td class="auto-style19">&nbsp;</td>
         </tr>
     </table>
 </asp:Content>
