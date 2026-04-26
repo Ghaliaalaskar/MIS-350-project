@@ -16,6 +16,13 @@
     .auto-style21 {
         text-align: center;
     }
+    .auto-style22 {
+        width: 313px;
+    }
+    .auto-style23 {
+        text-align: center;
+        width: 313px;
+    }
 </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -27,23 +34,25 @@
         </td>
     </tr>
     <tr>
-        <td class="auto-style18">First name:<asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox1" ErrorMessage="*" ForeColor="#CC3300"></asp:RequiredFieldValidator>
+        <td class="auto-style18">First name:<asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="textboxfirst" ErrorMessage="*" ForeColor="#CC3300" Display="Dynamic"></asp:RequiredFieldValidator>
             <br />
             <asp:TextBox ID="textboxfirst" runat="server" BorderStyle="Solid" BorderWidth="1px"></asp:TextBox>
         </td>
-        <td>Last name:<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox2" ErrorMessage="*" ForeColor="#CC3300"></asp:RequiredFieldValidator>
+        <td class="auto-style22">Last name:<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBoxlast" ErrorMessage="*" ForeColor="#CC3300" Display="Dynamic"></asp:RequiredFieldValidator>
             <br />
             <asp:TextBox ID="TextBoxlast" runat="server" BorderStyle="Solid" BorderWidth="1px"></asp:TextBox>
         </td>
     </tr>
     <tr>
-        <td colspan="2">Email:<asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="*" ForeColor="#CC3300"></asp:RequiredFieldValidator>
+        <td colspan="2">Email:<asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="*" ForeColor="#CC3300" ControlToValidate="TextBoxemail" Display="Dynamic"></asp:RequiredFieldValidator>
+            &nbsp;
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBoxemail" ErrorMessage="write email in correct format" ForeColor="#CC3300" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
             <br />
             <asp:TextBox ID="TextBoxemail" runat="server" BorderStyle="Solid" BorderWidth="1px" Width="250px"></asp:TextBox>
         </td>
     </tr>
     <tr>
-        <td class="auto-style18" colspan="2">Phone number:<asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="*" ForeColor="#CC3300"></asp:RequiredFieldValidator>
+        <td class="auto-style18" colspan="2">Phone number:<asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="*" ForeColor="#CC3300" ControlToValidate="TextBoxphone" Display="Dynamic"></asp:RequiredFieldValidator>
             <br />
             <asp:TextBox ID="TextBoxphone" runat="server" BorderStyle="Solid" BorderWidth="1px" Width="250px"></asp:TextBox>
             <h5>
@@ -53,13 +62,15 @@
     </tr>
     <tr>
         <td class="auto-style21">
-            <asp:Button ID="discard" runat="server" style="text-align: center; color: #70677A" Text="Discard" />
-&nbsp;</td>
-        <td class="auto-style21">
-            <asp:Button ID="updatbutton" runat="server" style="text-align: center; color: #FFFFFF; background-color: #70677A" Text="Update info" OnClick="updateinfo_Click" />
-&nbsp;&nbsp;&nbsp;
-            <asp:Label ID="Label1" runat="server" ForeColor="#003300" Text="Label"></asp:Label>
+            <br />
+            <asp:HyperLink ID="HyperLink7" runat="server" BorderStyle="Solid" BorderWidth="1px" EnableTheming="True" Font-Underline="False" ForeColor="#70677A" Height="25px" NavigateUrl="~/userdashboard.aspx" Width="100px">Back</asp:HyperLink>
         </td>
+        <td class="auto-style23">
+            <asp:Label ID="Label1" runat="server" ForeColor="#003300" style="color: #006600"></asp:Label>
+            <br />
+            <asp:Button ID="updatbutton" runat="server" style="text-align: center; color: #FFFFFF; background-color: #70677A" Text="Update info" OnClick="updateinfo_Click" Height="25px" Width="100px" />
+&nbsp;&nbsp;&nbsp;
+            </td>
     </tr>
 </table>
 </asp:Content>

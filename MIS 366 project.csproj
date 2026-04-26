@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="bookinghistory.aspx" />
     <Content Include="changepassword.aspx" />
+    <Content Include="home.aspx" />
     <Content Include="myaccount.aspx" />
     <Content Include="mybooking.aspx" />
     <Content Include="userdashboard.aspx" />
@@ -89,6 +90,13 @@
     </Compile>
     <Compile Include="changepassword.aspx.designer.cs">
       <DependentUpon>changepassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
     </Compile>
     <Compile Include="myaccount.aspx.cs">
       <DependentUpon>myaccount.aspx</DependentUpon>

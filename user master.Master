@@ -15,7 +15,7 @@
         }
         .auto-style3 {
             width: 235px;
-            height: 118px;
+            height: 64px;
             background-color: #70677A;
         }
         .auto-style16 {
@@ -64,23 +64,27 @@
             </tr>
             <tr>
                 <td class="auto-style16">
-                    <asp:HyperLink ID="userdashboard" runat="server" NavigateUrl="~/userdashboard.aspx" style="text-align: center; color: #FFFFFF">User Dashboard</asp:HyperLink>
-                    <br />
-                    <br />
-                    <asp:HyperLink ID="myaccount" runat="server" NavigateUrl="~/myaccount.aspx" style="text-align: center; color: #FFFFFF">My Account</asp:HyperLink>
-                    <br />
-                    <br />
-                    <asp:HyperLink ID="mybookings" runat="server" NavigateUrl="~/mybooking.aspx" style="color: #FFFFFF">My Bookings</asp:HyperLink>
-                    <br />
-                    <br />
-                    <asp:HyperLink ID="bookinghistory" runat="server" NavigateUrl="~/bookinghistory.aspx" style="color: #FFFFFF">Booking History</asp:HyperLink>
-                    <br />
-                    <br />
-                    <asp:HyperLink ID="HyperLink5" runat="server">hyperlink</asp:HyperLink>
+                    <asp:HyperLink ID="userdashboard" runat="server" Font-Underline="False" NavigateUrl="~/userdashboard.aspx" style="text-align: center; color: #FFFFFF">User Dashboard</asp:HyperLink>
                     <br />
                     <br />
                     <br />
-                    <asp:HyperLink ID="logout" runat="server" NavigateUrl="~/userlogout.aspx" style="color: #FFFFFF">Log Out</asp:HyperLink>
+                    <asp:HyperLink ID="myaccount" runat="server" Font-Underline="False" NavigateUrl="~/myaccount.aspx" style="text-align: center; color: #FFFFFF">My Account</asp:HyperLink>
+                    <br />
+                    <br />
+                    <br />
+                    <asp:HyperLink ID="mybookings" runat="server" Font-Underline="False" NavigateUrl="~/mybooking.aspx" style="color: #FFFFFF">My Bookings</asp:HyperLink>
+                    <br />
+                    <br />
+                    <br />
+                    <asp:HyperLink ID="bookinghistory" runat="server" Font-Underline="False" NavigateUrl="~/bookinghistory.aspx" style="color: #FFFFFF">Booking History</asp:HyperLink>
+                    <br />
+                    <br />
+                    <br />
+                    <asp:HyperLink ID="HyperLink5" runat="server" Font-Underline="False" ForeColor="White" NavigateUrl="~/home.aspx">Home</asp:HyperLink>
+                    <br />
+                    <br />
+                    <br />
+                    <asp:HyperLink ID="logout" runat="server" Font-Underline="False" NavigateUrl="~/userlogout.aspx" style="color: #FFFFFF">Log Out</asp:HyperLink>
                 </td>
             </tr>
         </table>

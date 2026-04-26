@@ -16,7 +16,14 @@ namespace MIS_350_project
 
         protected void updateinfo_Click(object sender, EventArgs e)
         {
-            
+            if(Page.IsValid)
+            { Label1.Text = "data updated successfuly"; }
+            else { Label1.Text = ""; }
+        }
+
+        protected void discard_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

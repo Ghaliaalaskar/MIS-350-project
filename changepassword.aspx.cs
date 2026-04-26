@@ -13,5 +13,22 @@ namespace MIS_350_project
         {
 
         }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            if (Page.IsValid)
+            { Label1.Text = "Password changed successfuly"; }
+            else { Label1.Text = ""; }
+        }
+
+        protected void ChangePassword1_ChangedPassword(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void TextBoxurpass_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

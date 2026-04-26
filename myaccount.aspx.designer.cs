@@ -60,6 +60,15 @@ namespace MIS_350_project
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
 
         /// <summary>
+        /// RegularExpressionValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
+
+        /// <summary>
         /// TextBoxemail control.
         /// </summary>
         /// <remarks>
@@ -96,22 +105,13 @@ namespace MIS_350_project
         protected global::System.Web.UI.WebControls.HyperLink HyperLink6;
 
         /// <summary>
-        /// discard control.
+        /// HyperLink7 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button discard;
-
-        /// <summary>
-        /// updatbutton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button updatbutton;
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink7;
 
         /// <summary>
         /// Label1 control.
@@ -121,5 +121,14 @@ namespace MIS_350_project
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label1;
+
+        /// <summary>
+        /// updatbutton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button updatbutton;
     }
 }
