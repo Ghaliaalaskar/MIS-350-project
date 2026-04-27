@@ -84,7 +84,7 @@
             <div class="form-group">
                 <label>Available Dates</label>
                 <asp:DropDownList ID="ddlDate" runat="server" CssClass="input-style" AutoPostBack="true" OnSelectedIndexChanged="ddlDate_SelectedIndexChanged">
-                    <asp:ListItem Text="-- Select Date --" Value="0"></asp:ListItem>
+                    <asp:ListItem Text=" Select Date " Value="0"></asp:ListItem>
                     <asp:ListItem Text="Monday, May 4, 2026" Value="2026-05-04"></asp:ListItem>
                     <asp:ListItem Text="Tuesday, May 5, 2026" Value="2026-05-05"></asp:ListItem>
                     <asp:ListItem Text="Wednesday, May 6, 2026" Value="2026-05-06"></asp:ListItem>
@@ -94,7 +94,7 @@
             <div class="form-group">
                 <label>Available Times</label>
                 <asp:DropDownList ID="ddlTime" runat="server" CssClass="input-style" OnSelectedIndexChanged="ddlTime_SelectedIndexChanged">
-                    <asp:ListItem Text="-- Select Date First --" Value="0"></asp:ListItem>
+                    <asp:ListItem Text=" Select Time " Value="0"></asp:ListItem>
                 </asp:DropDownList>
             </div>
 
