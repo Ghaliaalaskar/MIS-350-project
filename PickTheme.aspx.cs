@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace MIS_350_project
@@ -11,19 +7,23 @@ namespace MIS_350_project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
-        
         }
-        protected void SelectTheme(object sender, EventArgs e)
+
+        protected void GoToDetails(object sender, EventArgs e)
+        {
+            LinkButton btn = (LinkButton)sender;
+            string targetPage = btn.CommandArgument; 
+            Response.Redirect(targetPage);
+        }
+
+        protected void GoToBooking(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
-            string themeID = btn.CommandArgument;
+            string themeName = btn.CommandArgument; 
 
-            Session["SelectedThemeID"] = themeID;
-            
-            Response.Redirect("BookingSelection.aspx");
+            Session["SelectedTheme"] = themeName;
+
+            Response.Redirect("BookYourAppointment.aspx");
         }
-
     }
-
 }

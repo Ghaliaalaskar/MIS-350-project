@@ -15,30 +15,57 @@ namespace MIS_350_project
     {
 
         /// <summary>
-        /// btnPick1 control.
+        /// btnGradDetails control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnPick1;
+        protected global::System.Web.UI.WebControls.LinkButton btnGradDetails;
 
         /// <summary>
-        /// btnPick2 control.
+        /// btnGradBook control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnPick2;
+        protected global::System.Web.UI.WebControls.Button btnGradBook;
 
         /// <summary>
-        /// btnPick3 control.
+        /// btnBabyDetails control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnPick3;
+        protected global::System.Web.UI.WebControls.LinkButton btnBabyDetails;
+
+        /// <summary>
+        /// btnBabyBook control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnBabyBook;
+
+        /// <summary>
+        /// btnBrideDetails control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton btnBrideDetails;
+
+        /// <summary>
+        /// btnBrideBook control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnBrideBook;
     }
 }

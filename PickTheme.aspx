@@ -2,108 +2,119 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
-        /* تأكدي إن الخلفية ما تغطي على الـ Nav */
         .themes-wrapper {
             text-align: center;
-            padding: 40px 20px;
+            padding: 40px;
             background-color: #F4F7FC;
-            min-height: 100vh;
-        }
-        
-        .themes-grid {
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            flex-wrap: wrap;
-            margin-top: 30px;
         }
 
         .page-title {
             color: #6B5B7B;
             font-size: 28px;
+            margin-bottom: 30px;
             font-weight: 500;
-            margin-bottom: 10px;
+        }
+
+        .themes-grid {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
         }
 
         .theme-card {
             background: white;
             width: 280px;
-            border-radius: 15px;
+            border-radius: 20px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
             overflow: hidden;
             transition: 0.3s;
         }
 
-        .theme-card img { 
-            width: 100%; 
-            height: 220px; 
-            object-fit: cover; 
+        .theme-card:hover {
+            transform: translateY(-5px);
         }
 
-        .theme-info { padding: 20px; }
-        
-        .theme-title { 
-            color: #8E8E8E; 
-            margin-bottom: 15px; 
-            display: block; 
+        .theme-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .theme-info {
+            padding: 20px;
+        }
+
+        .theme-label {
+            color: #8E8E8E;
+            margin-bottom: 15px;
+            display: block;
             font-size: 16px;
         }
-        
-        .btn-gray { 
-            background: #C4C4C4; 
-            color: white; 
-            padding: 10px; 
-            width: 100%; 
-            border-radius: 15px; 
-            text-decoration: none; 
-            display: block; 
-            margin-bottom: 10px; 
-            font-size: 14px; 
-            border:none; 
+
+        .btn-details {
+            background-color: #C4C4C4;
+            color: white !important;
+            padding: 10px;
+            width: 100%;
+            border-radius: 15px;
+            display: block;
+            text-decoration: none;
+            margin-bottom: 10px;
+            font-size: 14px;
+            border: none;
             text-align: center;
+            cursor: pointer;
+            box-sizing: border-box;
         }
 
-        .btn-purple { 
-            background: #6B5B7B; 
-            color: white; 
-            padding: 12px; 
-            width: 100%; 
-            border-radius: 15px; 
-            text-decoration: none; 
-            display: block; 
-            font-size: 14px; 
-            border:none; 
-            cursor: pointer; 
+        .btn-book {
+            background-color: #6B5B7B;
+            color: white;
+            padding: 12px;
+            width: 100%;
+            border-radius: 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .btn-book:hover {
+            background-color: #5a3a8e;
         }
     </style>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="themes-wrapper">
-        <h2 class="page-title">Pick your Theme!</h2>
+        <h1 class="page-title">Pick your Theme!</h1>
+        
         <div class="themes-grid">
             <div class="theme-card">
                 <img src="images/grad.jpg" alt="Graduation" />
                 <div class="theme-info">
-                    <span class="theme-title">Graduation</span>
-                    <a href="Details.aspx?id=1" class="btn-gray">Theme Details</a>
-                    <asp:Button ID="btnPick1" runat="server" Text="Book Theme" CssClass="btn-purple" OnClick="SelectTheme" CommandArgument="1" />
+                    <span class="theme-label">Graduation</span>
+                    <asp:LinkButton ID="btnGradDetails" runat="server" CssClass="btn-details" OnClick="GoToDetails" CommandArgument="GraduationDetails.aspx">Theme Details</asp:LinkButton>
+                    <asp:Button ID="btnGradBook" runat="server" Text="Book Theme" CssClass="btn-book" OnClick="GoToBooking" CommandArgument="Graduation" />
                 </div>
             </div>
+
             <div class="theme-card">
                 <img src="images/baby.jpg" alt="Baby Shower" />
                 <div class="theme-info">
-                    <span class="theme-title">Baby Shower</span>
-                    <a href="Details.aspx?id=2" class="btn-gray">Theme Details</a>
-                    <asp:Button ID="btnPick2" runat="server" Text="Book Theme" CssClass="btn-purple" OnClick="SelectTheme" CommandArgument="2" />
+                    <span class="theme-label">Baby Shower</span>
+                    <asp:LinkButton ID="btnBabyDetails" runat="server" CssClass="btn-details" OnClick="GoToDetails" CommandArgument="BabyShowerDetails.aspx">Theme Details</asp:LinkButton>
+                    <asp:Button ID="btnBabyBook" runat="server" Text="Book Theme" CssClass="btn-book" OnClick="GoToBooking" CommandArgument="Baby Shower" />
                 </div>
             </div>
+
             <div class="theme-card">
                 <img src="images/bride.jpg" alt="Bridal Shower" />
                 <div class="theme-info">
-                    <span class="theme-title">Bridal Shower</span>
-                    <a href="Details.aspx?id=3" class="btn-gray">Theme Details</a>
-                    <asp:Button ID="btnPick3" runat="server" Text="Book Theme" CssClass="btn-purple" OnClick="SelectTheme" CommandArgument="3" />
+                    <span class="theme-label">Bridal Shower</span>
+                    <asp:LinkButton ID="btnBrideDetails" runat="server" CssClass="btn-details" OnClick="GoToDetails" CommandArgument="BridalShowerDetails.aspx">Theme Details</asp:LinkButton>
+                    <asp:Button ID="btnBrideBook" runat="server" Text="Book Theme" CssClass="btn-book" OnClick="GoToBooking" CommandArgument="Bridal Shower" />
                 </div>
             </div>
         </div>
