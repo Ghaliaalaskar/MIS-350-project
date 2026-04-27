@@ -74,6 +74,7 @@
     <Content Include="BookYourAppointment.aspx" />
     <Content Include="BridalShowerDetails.aspx" />
     <Content Include="changepassword.aspx" />
+    <Content Include="DiscoverThemes.aspx" />
     <Content Include="GraduationDetails.aspx" />
     <Content Include="home.aspx" />
     <Content Include="images\admin-avatar.png" />
@@ -148,6 +149,13 @@
     <Compile Include="changepassword.aspx.designer.cs">
       <DependentUpon>changepassword.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DiscoverThemes.aspx.cs">
+      <DependentUpon>DiscoverThemes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DiscoverThemes.aspx.designer.cs">
+      <DependentUpon>DiscoverThemes.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GraduationDetails.aspx.cs">
       <DependentUpon>GraduationDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -161,6 +169,13 @@
     </Compile>
     <Compile Include="home.aspx.designer.cs">
       <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterDiscoverThemes.Master.cs">
+      <DependentUpon>MasterDiscoverThemes.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterDiscoverThemes.Master.designer.cs">
+      <DependentUpon>MasterDiscoverThemes.Master</DependentUpon>
     </Compile>
     <Compile Include="MasterPickThemes.Master.cs">
       <DependentUpon>MasterPickThemes.Master</DependentUpon>
@@ -237,6 +252,7 @@
   <ItemGroup>
     <Content Include="AdminMaster.Master" />
     <Content Include="MasterPickThemes.Master" />
+    <Content Include="MasterDiscoverThemes.Master" />
     <None Include="packages.config" />
     <Content Include="user master.Master" />
     <None Include="Web.Debug.config">
