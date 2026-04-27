@@ -2,33 +2,32 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
-        .discover-container {
+        .discover-wrapper {
             text-align: center;
+            padding: 40px;
             background-color: #F4F7FC;
-            padding-bottom: 50px;
         }
 
         .discover-title {
             color: #6B5B7B;
-            font-size: 32px;
-            margin-top: 20px;
-            margin-bottom: 40px;
+            font-size: 28px;
+            margin-bottom: 30px;
             font-weight: 500;
         }
 
-        .themes-row {
+        .themes-grid {
             display: flex;
             justify-content: center;
-            gap: 30px;
+            gap: 25px;
             flex-wrap: wrap;
         }
 
         .theme-card {
-            background-color: white;
-            width: 300px;
-            border-radius: 25px;
-            overflow: hidden;
+            background: white;
+            width: 280px;
+            border-radius: 20px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            overflow: hidden;
             transition: 0.3s;
         }
 
@@ -38,82 +37,84 @@
 
         .theme-card img {
             width: 100%;
-            height: 250px;
+            height: 220px;
             object-fit: cover;
         }
 
-        .theme-details-area {
+        .theme-info {
             padding: 20px;
-            text-align: center;
         }
 
         .theme-label {
-            display: block;
             color: #8E8E8E;
-            font-size: 18px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+            display: block;
+            font-size: 16px;
         }
 
-        .btn-gray-details {
+        .btn-details {
             background-color: #C4C4C4;
-            color: white;
+            color: white !important;
             padding: 10px;
             width: 100%;
             border-radius: 15px;
-            text-decoration: none;
             display: block;
+            text-decoration: none;
             margin-bottom: 10px;
             font-size: 14px;
             border: none;
+            text-align: center;
+            cursor: pointer;
+            box-sizing: border-box;
         }
 
-        .btn-purple-book {
+        .btn-book {
             background-color: #6B5B7B;
             color: white;
             padding: 12px;
             width: 100%;
             border-radius: 15px;
             border: none;
-            font-size: 14px;
             cursor: pointer;
+            font-size: 14px;
             transition: 0.3s;
         }
 
-        .btn-purple-book:hover {
+        .btn-book:hover {
             background-color: #5a3a8e;
         }
     </style>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="discover-container">
+    <div class="discover-wrapper">
         <h1 class="discover-title">Discover Themes</h1>
         
-        <div class="themes-row">
+        <div class="themes-grid">
             <div class="theme-card">
                 <img src="images/grad.jpg" alt="Graduation" />
-                <div class="theme-details-area">
+                <div class="theme-info">
                     <span class="theme-label">Graduation</span>
-                    <a href="GraduationDetails.aspx" class="btn-gray-details">Theme Details</a>
-                    <asp:Button ID="btnBookGrad" runat="server" Text="Book Theme" CssClass="btn-purple-book" OnClick="btnBook_Click" />
+                    <asp:LinkButton ID="btnGradDetails" runat="server" CssClass="btn-details" OnClick="GoToDetails" CommandArgument="GradDetailsGuest.aspx">Theme Details</asp:LinkButton>
+                    <asp:Button ID="btnGradBook" runat="server" Text="Book Theme" CssClass="btn-book" OnClick="RedirectToLogin" />
                 </div>
             </div>
 
             <div class="theme-card">
                 <img src="images/baby.jpg" alt="Baby Shower" />
-                <div class="theme-details-area">
+                <div class="theme-info">
                     <span class="theme-label">Baby Shower</span>
-                    <a href="BabyShowerDetails.aspx" class="btn-gray-details">Theme Details</a>
-                    <asp:Button ID="btnBookBaby" runat="server" Text="Book Theme" CssClass="btn-purple-book" OnClick="btnBook_Click" />
+                    <asp:LinkButton ID="btnBabyDetails" runat="server" CssClass="btn-details" OnClick="GoToDetails" CommandArgument="BabyDetailsGuest.aspx">Theme Details</asp:LinkButton>
+                    <asp:Button ID="btnBabyBook" runat="server" Text="Book Theme" CssClass="btn-book" OnClick="RedirectToLogin" />
                 </div>
             </div>
 
             <div class="theme-card">
                 <img src="images/bride.jpg" alt="Bridal Shower" />
-                <div class="theme-details-area">
+                <div class="theme-info">
                     <span class="theme-label">Bridal Shower</span>
-                    <a href="BridalShowerDetails.aspx" class="btn-gray-details">Theme Details</a>
-                    <asp:Button ID="btnBookBride" runat="server" Text="Book Theme" CssClass="btn-purple-book" OnClick="btnBook_Click" />
+                    <asp:LinkButton ID="btnBrideDetails" runat="server" CssClass="btn-details" OnClick="GoToDetails" CommandArgument="BridalDetailsGuest.aspx">Theme Details</asp:LinkButton>
+                    <asp:Button ID="btnBrideBook" runat="server" Text="Book Theme" CssClass="btn-book" OnClick="RedirectToLogin" />
                 </div>
             </div>
         </div>
