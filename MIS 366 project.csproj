@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminDashboard.aspx" />
     <Content Include="bookinghistory.aspx" />
     <Content Include="changepassword.aspx" />
     <Content Include="home.aspx" />
@@ -82,6 +83,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminDashboard.aspx.cs">
+      <DependentUpon>AdminDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminDashboard.aspx.designer.cs">
+      <DependentUpon>AdminDashboard.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdminMaster.Master.cs">
       <DependentUpon>AdminMaster.Master</DependentUpon>
     </Compile>
