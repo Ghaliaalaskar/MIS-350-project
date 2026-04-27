@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Web.UI.WebControls;
 
-namespace MIS_366_project
+namespace MIS_350_project
 {
     public partial class PickTheme : System.Web.UI.Page
     {

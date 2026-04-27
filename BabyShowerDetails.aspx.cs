@@ -17,7 +17,7 @@ namespace MIS_350_project
         protected void btnBook_Click(object sender, EventArgs e)
         {
             Session["SelectedTheme"] = "Baby Shower";
-            Response.Redirect("AppointmentConfirmed.aspx");
+            Response.Redirect("BookYourAppointment.aspx");
         }
     }
 }

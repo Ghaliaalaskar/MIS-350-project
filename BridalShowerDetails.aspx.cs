@@ -18,7 +18,7 @@ namespace MIS_350_project
         {
             Session["SelectedTheme"] = "Bridal Shower";
             
-            Response.Redirect("BookingSelection.aspx");
+            Response.Redirect("BookYourAppointment.aspx");
         }
     }
 }
