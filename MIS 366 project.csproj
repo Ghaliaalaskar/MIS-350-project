@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminDashboard.aspx" />
+    <Content Include="AppointmentConfirmed.aspx" />
     <Content Include="BabyShowerDetails.aspx" />
     <Content Include="bookinghistory.aspx" />
     <Content Include="BookYourAppointment.aspx" />
@@ -104,6 +105,13 @@
     </Compile>
     <Compile Include="AdminMaster.Master.designer.cs">
       <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AppointmentConfirmed.aspx.cs">
+      <DependentUpon>AppointmentConfirmed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AppointmentConfirmed.aspx.designer.cs">
+      <DependentUpon>AppointmentConfirmed.aspx</DependentUpon>
     </Compile>
     <Compile Include="BabyShowerDetails.aspx.cs">
       <DependentUpon>BabyShowerDetails.aspx</DependentUpon>

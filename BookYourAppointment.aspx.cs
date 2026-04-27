@@ -53,7 +53,7 @@ namespace MIS_350_project
           
             Session["ConfirmedBooking"] = theme + " on " + finalDate + " at " + finalTime;
 
-            Response.Redirect("UserDashboard.aspx");
+            Response.Redirect("AppointmentConfirmed.aspx");
         }
 
         protected void ddlTime_SelectedIndexChanged(object sender, EventArgs e)
