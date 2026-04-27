@@ -1,5 +1,4 @@
 ﻿<%@ Page Title="Pick Your Theme" Language="C#" MasterPageFile="~/MasterPickThemes.Master" AutoEventWireup="true" CodeBehind="PickTheme.aspx.cs" Inherits="MIS_350_project.PickTheme" %>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
         .themes-wrapper {

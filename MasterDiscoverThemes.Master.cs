@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace MIS_350_project
 {
-    public partial class MasterDiscoverThemes : System.Web.UI.MasterPage
+    public partial class MasterDiscoverThemes : MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

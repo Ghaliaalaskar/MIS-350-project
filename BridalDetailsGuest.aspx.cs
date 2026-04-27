@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace MIS_350_project
 {
-    public partial class BridalDetailsGuest : System.Web.UI.Page
+    public partial class BridalDetailsGuest : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

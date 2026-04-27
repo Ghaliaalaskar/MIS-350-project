@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace MIS_350_project
 {
-    public partial class MasterPickThemes : System.Web.UI.MasterPage
+    public partial class MasterPickThemes : MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -1,5 +1,4 @@
 ﻿<%@ Page Title="Discover Themes" Language="C#" MasterPageFile="~/MasterDiscoverThemes.Master" AutoEventWireup="true" CodeBehind="DiscoverThemes.aspx.cs" Inherits="MIS_350_project.DiscoverThemes" %>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
         .discover-wrapper {

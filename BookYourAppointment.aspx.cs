@@ -4,7 +4,7 @@ using System.Web.UI.WebControls;
 
 namespace MIS_350_project
 {
-    public partial class BookYourAppointment : System.Web.UI.Page
+    public partial class BookYourAppointment : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

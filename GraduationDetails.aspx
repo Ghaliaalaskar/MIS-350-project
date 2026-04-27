@@ -1,5 +1,4 @@
 ﻿<%@ Page Title="Graduation Details" Language="C#" MasterPageFile="~/MasterPickThemes.Master" AutoEventWireup="true" CodeBehind="GraduationDetails.aspx.cs" Inherits="MIS_350_project.GraduationDetails" %>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
         .details-wrapper {

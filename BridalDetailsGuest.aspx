@@ -1,5 +1,4 @@
-﻿<%@ Page Title="Bridal Shower Details (Guest)" Language="C#" MasterPageFile="~/MasterDiscoverThemes.Master" AutoEventWireup="true" CodeBehind="BridalDetailsGuest.aspx.cs" Inherits="MIS_350_project.BridalDetailsGuest" %>
-
+﻿<%@ Page Title="Bridal Shower Details" Language="C#" MasterPageFile="~/MasterDiscoverThemes.Master" AutoEventWireup="true" CodeBehind="BridalDetailsGuest.aspx.cs" Inherits="MIS_350_project.BridalDetailsGuest" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
         .details-wrapper { background-color: #F4F7FC; padding: 20px; display: flex; justify-content: center; }

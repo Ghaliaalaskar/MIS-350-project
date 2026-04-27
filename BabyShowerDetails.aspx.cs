@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace MIS_350_project
 {
-    public partial class BabyShowerDetails : System.Web.UI.Page
+    public partial class BabyShowerDetails : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -17,7 +17,7 @@ namespace MIS_350_project
         protected void btnBook_Click(object sender, EventArgs e)
         {
             Session["SelectedTheme"] = "Baby Shower";
-            Response.Redirect("BookingSelection.aspx");
+            Response.Redirect("AppointmentConfirmed.aspx");
         }
     }
 }

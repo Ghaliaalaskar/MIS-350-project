@@ -1,5 +1,4 @@
 ﻿<%@ Page Title="Book Your Appointment" Language="C#" MasterPageFile="~/MasterPickThemes.Master" AutoEventWireup="true" CodeBehind="BookYourAppointment.aspx.cs" Inherits="MIS_350_project.BookYourAppointment" %>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
         .booking-wrapper {

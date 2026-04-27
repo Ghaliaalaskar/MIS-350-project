@@ -1,5 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterDiscoverThemes.master.cs" Inherits="MIS_350_project.MasterDiscoverThemes" %>
-
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterDiscoverThemes.Master.cs" Inherits="MIS_350_project.MasterDiscoverThemes" %>
 <!DOCTYPE html>
 <html>
 <head runat="server">

@@ -1,5 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPickThemes.master.cs" Inherits="YourProjectName.MasterPickThemes" %>
-
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPickThemes.Master.cs" Inherits="MIS_350_project.MasterPickThemes" %>
 <!DOCTYPE html>
 <html>
 <head runat="server">

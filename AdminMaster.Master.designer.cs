@@ -11,7 +11,7 @@ namespace MIS_350_project
 {
 
 
-    public partial class Admin
+    public partial class AdminMaster
     {
 
         /// <summary>

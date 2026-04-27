@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace YourProjectName
+namespace MIS_350_project
 {
 
 

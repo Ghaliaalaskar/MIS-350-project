@@ -1,5 +1,4 @@
 ﻿<%@ Page Title="Bridal Shower Details" Language="C#" MasterPageFile="~/MasterPickThemes.Master" AutoEventWireup="true" CodeBehind="BridalShowerDetails.aspx.cs" Inherits="MIS_350_project.BridalShowerDetails" %>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
         .details-wrapper {

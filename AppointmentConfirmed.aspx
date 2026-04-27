@@ -1,5 +1,4 @@
 ﻿<%@ Page Title="Appointment Confirmed" Language="C#" MasterPageFile="~/MasterPickThemes.Master" AutoEventWireup="true" CodeBehind="AppointmentConfirmed.aspx.cs" Inherits="MIS_350_project.AppointmentConfirmed" %>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
         .confirmation-wrapper {
