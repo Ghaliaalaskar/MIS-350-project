@@ -73,8 +73,12 @@
     <Content Include="home.aspx" />
     <Content Include="images\admin-avatar.png" />
     <Content Include="images\admin-icon.png" />
+    <Content Include="images\baby.jpg" />
+    <Content Include="images\bride.jpg" />
+    <Content Include="images\grad.jpg" />
     <Content Include="myaccount.aspx" />
     <Content Include="mybooking.aspx" />
+    <Content Include="PickTheme.aspx" />
     <Content Include="userbookingdetails.aspx" />
     <Content Include="usercancelbooking.aspx" />
     <Content Include="userdashboard.aspx" />
@@ -92,6 +96,7 @@
     </Compile>
     <Compile Include="AdminMaster.Master.cs">
       <DependentUpon>AdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AdminMaster.Master.designer.cs">
       <DependentUpon>AdminMaster.Master</DependentUpon>
@@ -130,6 +135,13 @@
     </Compile>
     <Compile Include="mybooking.aspx.designer.cs">
       <DependentUpon>mybooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PickTheme.aspx.cs">
+      <DependentUpon>PickTheme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PickTheme.aspx.designer.cs">
+      <DependentUpon>PickTheme.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="user master.Master.cs">
