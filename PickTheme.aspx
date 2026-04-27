@@ -1,12 +1,15 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/user master.Master" AutoEventWireup="true" CodeBehind="PickTheme.aspx.cs" Inherits="MIS_350_project.PickTheme" %>
+﻿<%@ Page Title="Pick Your Theme" Language="C#" MasterPageFile="~/MasterPickThemes.Master" AutoEventWireup="true" CodeBehind="PickTheme.aspx.cs" Inherits="MIS_350_project.PickTheme" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
-        
+        /* تأكدي إن الخلفية ما تغطي على الـ Nav */
         .themes-wrapper {
             text-align: center;
-            padding: 40px;
+            padding: 40px 20px;
             background-color: #F4F7FC;
+            min-height: 100vh;
         }
+        
         .themes-grid {
             display: flex;
             justify-content: center;
@@ -14,25 +17,70 @@
             flex-wrap: wrap;
             margin-top: 30px;
         }
+
+        .page-title {
+            color: #6B5B7B;
+            font-size: 28px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
         .theme-card {
             background: white;
-            width: 260px;
+            width: 280px;
             border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
             overflow: hidden;
+            transition: 0.3s;
         }
-        .theme-card img { width: 100%; height: 200px; object-fit: cover; }
-        .theme-info { padding: 15px; }
-        .theme-title { color: #888; margin-bottom: 15px; display: block; }
+
+        .theme-card img { 
+            width: 100%; 
+            height: 220px; 
+            object-fit: cover; 
+        }
+
+        .theme-info { padding: 20px; }
         
-        .btn-gray { background: #CCC; color: white; padding: 8px; width: 100%; border-radius: 10px; text-decoration: none; display: block; margin-bottom: 8px; font-size: 13px; border:none; }
-        .btn-purple { background: #6B5B7B; color: white; padding: 10px; width: 100%; border-radius: 10px; text-decoration: none; display: block; font-size: 13px; border:none; cursor: pointer; }
+        .theme-title { 
+            color: #8E8E8E; 
+            margin-bottom: 15px; 
+            display: block; 
+            font-size: 16px;
+        }
+        
+        .btn-gray { 
+            background: #C4C4C4; 
+            color: white; 
+            padding: 10px; 
+            width: 100%; 
+            border-radius: 15px; 
+            text-decoration: none; 
+            display: block; 
+            margin-bottom: 10px; 
+            font-size: 14px; 
+            border:none; 
+            text-align: center;
+        }
+
+        .btn-purple { 
+            background: #6B5B7B; 
+            color: white; 
+            padding: 12px; 
+            width: 100%; 
+            border-radius: 15px; 
+            text-decoration: none; 
+            display: block; 
+            font-size: 14px; 
+            border:none; 
+            cursor: pointer; 
+        }
     </style>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="themes-wrapper">
-        <h2 style="color: #6B5B7B;">Pick your Theme</h2>
+        <h2 class="page-title">Pick your Theme</h2>
         <div class="themes-grid">
             <div class="theme-card">
                 <img src="images/grad.jpg" alt="Graduation" />

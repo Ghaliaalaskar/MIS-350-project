@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPickThemes.master.cs" Inherits="YourProjectName.MasterPickThemes" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Pick Themes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #F4F7FC;
+        }
+
+        
+        .navbar-top {
+            background-color: #6B5B7B;  
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-section {
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 400;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links a i {
+            margin-right: 8px;
+            font-size: 16px;
+        }
+
+        .nav-links a:hover {
+            color: #D1C4E9; 
+        }
+
+        
+        .main-container {
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header class="navbar-top">
+            <nav class="nav-links">
+                <i class="fas fa-home"></i> 
+                <br />
+                <a href="Home.aspx">Home</a>
+                <a href="PickThemes.aspx"><i class="fas fa-magic"></i> Pick Themes</a>
+                <a href="UserDashboard.aspx"><i class="fas fa-chart-line"></i> My Dashboard</a>
+                <a href="Logout.aspx"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                <br />
+            </nav>
+        </header>
+
+        <main class="main-container">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+        </main>
+    </form>
+</body>
+</html>

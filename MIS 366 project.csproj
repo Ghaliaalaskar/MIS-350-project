@@ -122,6 +122,13 @@
     <Compile Include="home.aspx.designer.cs">
       <DependentUpon>home.aspx</DependentUpon>
     </Compile>
+    <Compile Include="MasterPickThemes.Master.cs">
+      <DependentUpon>MasterPickThemes.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPickThemes.Master.designer.cs">
+      <DependentUpon>MasterPickThemes.Master</DependentUpon>
+    </Compile>
     <Compile Include="myaccount.aspx.cs">
       <DependentUpon>myaccount.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -189,6 +196,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminMaster.Master" />
+    <Content Include="MasterPickThemes.Master" />
     <None Include="packages.config" />
     <Content Include="user master.Master" />
     <None Include="Web.Debug.config">
