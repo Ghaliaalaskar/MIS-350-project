@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminDashboard.aspx" />
+    <Content Include="BabyShowerDetails.aspx" />
     <Content Include="bookinghistory.aspx" />
     <Content Include="changepassword.aspx" />
     <Content Include="GraduationDetails.aspx" />
@@ -101,6 +102,13 @@
     </Compile>
     <Compile Include="AdminMaster.Master.designer.cs">
       <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="BabyShowerDetails.aspx.cs">
+      <DependentUpon>BabyShowerDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BabyShowerDetails.aspx.designer.cs">
+      <DependentUpon>BabyShowerDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="bookinghistory.aspx.cs">
       <DependentUpon>bookinghistory.aspx</DependentUpon>
