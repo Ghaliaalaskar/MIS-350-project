@@ -46,8 +46,6 @@ namespace MIS_350_project
             
             string finalDate = ddlDate.SelectedItem.Text;
             string finalTime = ddlTime.SelectedItem.Text;
-            string location = txtLocation.Text;
-            string notes = txtNotes.Text;
             string theme = Session["SelectedTheme"] != null ? Session["SelectedTheme"].ToString() : "Not Specified";
 
           

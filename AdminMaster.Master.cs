@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace MIS_350_project
+namespace MIS_366_project
 {
     public partial class AdminMaster : System.Web.UI.MasterPage
     {
