@@ -7,16 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace MIS_350_project
 {
-    public partial class userlogout : System.Web.UI.Page
+    public partial class usereditbooking : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-
-        protected void btnLogout_Click(object sender, EventArgs e)
-        {
-        
-        }
     }
-    }
+}
