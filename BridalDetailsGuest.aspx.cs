@@ -16,7 +16,7 @@ namespace MIS_350_project
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("Login.aspx");
         }
     }
 }
