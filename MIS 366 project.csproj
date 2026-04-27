@@ -70,6 +70,7 @@
     <Content Include="AdminDashboard.aspx" />
     <Content Include="BabyShowerDetails.aspx" />
     <Content Include="bookinghistory.aspx" />
+    <Content Include="BookYourAppointment.aspx" />
     <Content Include="BridalShowerDetails.aspx" />
     <Content Include="changepassword.aspx" />
     <Content Include="GraduationDetails.aspx" />
@@ -117,6 +118,13 @@
     </Compile>
     <Compile Include="bookinghistory.aspx.designer.cs">
       <DependentUpon>bookinghistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BookYourAppointment.aspx.cs">
+      <DependentUpon>BookYourAppointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookYourAppointment.aspx.designer.cs">
+      <DependentUpon>BookYourAppointment.aspx</DependentUpon>
     </Compile>
     <Compile Include="BridalShowerDetails.aspx.cs">
       <DependentUpon>BridalShowerDetails.aspx</DependentUpon>
