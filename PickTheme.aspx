@@ -80,7 +80,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="themes-wrapper">
-        <h2 class="page-title">Pick your Theme</h2>
+        <h2 class="page-title">Pick your Theme!</h2>
         <div class="themes-grid">
             <div class="theme-card">
                 <img src="images/grad.jpg" alt="Graduation" />
