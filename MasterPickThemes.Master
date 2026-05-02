@@ -74,7 +74,7 @@
             <nav class="nav-links">
                 <i class="fas fa-home"></i> 
                 <br />
-                <a href="Home.aspx">Home</a>
+                <a href="PickTheme.aspx">Home</a>
                 <a href="PickTheme.aspx"><i class="fas fa-magic"></i> Pick Themes</a>
                 <a href="UserDashboard.aspx"><i class="fas fa-chart-line"></i> My Dashboard</a>
                 <a href="Logout.aspx"><i class="fas fa-sign-out-alt"></i> Logout</a>

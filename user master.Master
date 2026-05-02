@@ -80,7 +80,7 @@
                     <br />
                     <br />
                     <br />
-                    <asp:HyperLink ID="HyperLink5" runat="server" Font-Underline="False" ForeColor="White" NavigateUrl="~/home.aspx">Home</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink5" runat="server" Font-Underline="False" ForeColor="White" NavigateUrl="~/PickTheme.aspx">Home</asp:HyperLink>
                     <br />
                     <br />
                     <br />
