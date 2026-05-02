@@ -7,7 +7,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{58DC5C00-9C52-FE9B-D90E-0F61DE2F6A04}</ProjectGuid>
+    <ProjectGuid>{D98EE61A-10DE-4CB7-9370-3851D0C91A3C}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -69,7 +69,6 @@
   <ItemGroup>
     <Content Include="bookinghistory.aspx" />
     <Content Include="changepassword.aspx" />
-    <Content Include="home.aspx" />
     <Content Include="images\admin-avatar.png" />
     <Content Include="images\admin-icon.png" />
     <Content Include="myaccount.aspx" />
@@ -101,13 +100,6 @@
     </Compile>
     <Compile Include="changepassword.aspx.designer.cs">
       <DependentUpon>changepassword.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="home.aspx.cs">
-      <DependentUpon>home.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="home.aspx.designer.cs">
-      <DependentUpon>home.aspx</DependentUpon>
     </Compile>
     <Compile Include="myaccount.aspx.cs">
       <DependentUpon>myaccount.aspx</DependentUpon>

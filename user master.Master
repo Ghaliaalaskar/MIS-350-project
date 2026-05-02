@@ -27,7 +27,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <table cellpadding="5" cellspacing="5" class="auto-style1">
+        &nbsp;<table cellpadding="5" cellspacing="5" class="auto-style1">
             <tr>
                 <td class="auto-style3"></td>
                 <td rowspan="2" style="background-color: #FFFFFF">
