@@ -11,88 +11,61 @@ namespace MIS_350_project
 {
 
 
-    public partial class AdminMaster
+    public partial class PickTheme
     {
 
         /// <summary>
-        /// head control.
+        /// btnGradDetails control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.LinkButton btnGradDetails;
 
         /// <summary>
-        /// form1 control.
+        /// btnGradBook control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Button btnGradBook;
 
         /// <summary>
-        /// ContentPlaceHolder1 control.
+        /// btnBabyDetails control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.LinkButton btnBabyDetails;
 
         /// <summary>
-        /// admindashboard control.
+        /// btnBabyBook control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink admindashboard;
+        protected global::System.Web.UI.WebControls.Button btnBabyBook;
 
         /// <summary>
-        /// manageusers control.
+        /// btnBrideDetails control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink manageusers;
+        protected global::System.Web.UI.WebControls.LinkButton btnBrideDetails;
 
         /// <summary>
-        /// managethemes control.
+        /// btnBrideBook control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink managethemes;
-
-        /// <summary>
-        /// manageavailability control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink manageavailability;
-
-        /// <summary>
-        /// managebookings control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink managebookings;
-
-        /// <summary>
-        /// logout control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink logout;
+        protected global::System.Web.UI.WebControls.Button btnBrideBook;
     }
 }
